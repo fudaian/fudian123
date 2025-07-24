@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地图与攻守视频</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="hero-detail.html">返回英雄详情</a>
+        <h1>地图与攻守视频</h1>
+    </header>
+    <main id="map-video">
+        <div class="map-select">
+            <label for="map">选择地图:</label>
+            <select id="map">
+                <option value="bind">绑定</option>
+                <option value="源工重镇">源工重镇</option>
+                <option value="split">分裂</option>
+            </select>
+            <label for="side">选择阵营:</label>
+            <select id="side">
+                <option value="attack">进攻方</option>
+                <option value="defense">防守方</option>
+            </select>
+            <button id="play-video">播放视频</button>
+        </div>
+        <video id="map-video-player"  class="centered-video" controls width="100%" muted></video>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
